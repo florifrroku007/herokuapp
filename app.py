@@ -7,9 +7,9 @@ def index():
     testo="Ciao mondo!"
     bottone="piu Info"
     return render_template("base.html",
-	tittolo=tittolo
-	testo=testo
-	bottone=bottone
+	      tittolo=tittolo
+    	    testo=testo
+        	bottone=bottone)
 
 if __name__ == '__main__':
     app.run()
@@ -17,12 +17,12 @@ if __name__ == '__main__':
 @app.route('/info')
 def info():
     titolo"Pagina Info"
-    testo="Informazioni!"
+    testo="Informazioni"
     bottone="Homepage"
     return render_template("base.html",
-	tittolo=tittolo
-	testo=testo
-	bottone=bottone
+	        tittolo=tittolo
+        	testo=testo
+        	bottone=bottone)
 
 if __name__ == '__main__':
     app.run()
