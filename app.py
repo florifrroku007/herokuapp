@@ -18,7 +18,8 @@ def info():
     bottone="Homepage"
     return render_template("info.html",
         titolo=titolo,
-        testo=testo)
+        testo=testo,
+        bottone=bottone)
 
 if __name__ == '__main__':
     app.run()
