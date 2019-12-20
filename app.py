@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    scritta"Ciao mondo!"
+    scritta="Ciao mondo!"
     return render_template("base.html", testo=scritta)
 
 if __name__ == '__main__':
@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
 @app.route('/info')
 def info():
-    scritta "Informazioni!"
+    scritta="Informazioni!"
     return render_template("base.html", testo=scritta)
 
 
