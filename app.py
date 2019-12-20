@@ -14,8 +14,8 @@ def index():
 @app.route('/contact')
 def info():
     titolo="contact"
-    testo="click here "
-    bottone="Homepage"
+    testo="contact page"
+    bottone="click here"
     return render_template("info.html",
         titolo=titolo,
         testo=testo,
