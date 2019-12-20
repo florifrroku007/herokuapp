@@ -5,9 +5,9 @@ app = Flask(__name__)
 def index():
     titolo="Pagina Iniziale"
     testo="Ciao mondo!"
-    bottone="piu Info"
+    bottone="Piu Info"
     return render_template("base.html",
-	tittolo=tittolo,
+    titolo=titolo,
     testo=testo,
     bottone=bottone)
 
@@ -20,7 +20,7 @@ def info():
     testo="Informazioni"
     bottone="Homepage"
     return render_template("base.html",
-	tittolo=tittolo,
+	titolo=titolo,
     testo=testo,
     bottone=bottone)
 
