@@ -13,7 +13,7 @@ def index():
 
 @app.route('/info')
 def info():
-    titolo"Pagina Info"
+    titolo="Pagina Info"
     testo="Informazioni"
     bottone="Homepage"
     return render_template("base.html",
