@@ -7,9 +7,9 @@ def index():
     testo="Ciao mondo!"
     bottone="Piu Info"
     return render_template("base.html",
-    titolo=titolo,
-    testo=testo,
-    bottone=bottone)
+        titolo=titolo,
+        testo=testo,
+        bottone=bottone)
 
 if __name__ == '__main__':
     app.run()
@@ -20,9 +20,9 @@ def info():
     testo="Informazioni"
     bottone="Homepage"
     return render_template("base.html",
-	titolo=titolo,
-    testo=testo,
-    bottone=bottone)
+        titolo=titolo,
+        testo=testo,
+        bottone=bottone)
 
 if __name__ == '__main__':
     app.run()
