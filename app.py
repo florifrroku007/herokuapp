@@ -11,7 +11,7 @@ def index():
         testo=testo,
         bottone=bottone)
 
-@app.route('/info')
+@app.route('/contact')
 def info():
     titolo="contact"
     testo="click here "
