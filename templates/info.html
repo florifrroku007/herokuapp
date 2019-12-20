@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>{% block title %}{% endblock %}</title>
+    <title>{{ titolo }}</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
 
@@ -37,14 +37,20 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
-      {% block navbar %}
-      {% endblock %}
+      <h3 class="masthead-brand">Hellbanianz</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="/">Home</a>
+        <a class="nav-link" href="/info">infoI</a>
+      </nav>
     </div>
   </header>
 
   <main role="main" class="inner cover">
-    {% block content %}
-    {% endblock %}
+    <h1 class="cover-heading">{{ titolo }}</h1>
+    <p class="lead">{{ testo }}</p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary">{{ bottone }}</a>
+    </p>
   </main>
 
   <footer class="mastfoot mt-auto">
