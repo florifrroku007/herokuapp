@@ -11,9 +11,6 @@ def index():
         testo=testo,
         bottone=bottone)
 
-if __name__ == '__main__':
-    app.run()
-
 @app.route('/info')
 def info():
     titolo"Pagina Info"
