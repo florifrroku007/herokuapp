@@ -3,9 +3,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    titolo="Pagina Iniziale"
-    testo="Ciao mondo!"
-    bottone="Piu Info"
+    titolo="Welcome"
+    testo="Home"
+    bottone="More Info"
     return render_template("index.html",
         titolo=titolo,
         testo=testo,
@@ -13,7 +13,7 @@ def index():
 
 @app.route('/info')
 def info():
-    titolo="Pagina Info"
+    titolo="Info"
     testo="Informazioni"
     bottone="Homepage"
     return render_template("info.html",
