@@ -7,3 +7,10 @@ def index():
 
 if __name__ == '__main__':
     app.run()
+
+@app.route('/info')
+def info():
+    return "Informazioni!"
+
+if __name__ == '__main__':
+    app.run()
